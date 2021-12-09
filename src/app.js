@@ -14,6 +14,7 @@ app.use('/api', sportRouter);
 //connection to database//
 require('./database/mongodb');
 
+
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/', (req, res) => {
