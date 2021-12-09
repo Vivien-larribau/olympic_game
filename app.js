@@ -1,3 +1,21 @@
+const express = require('express');
+const app = express();
+const port = 3000;
+const path = require('path')
+const { v4: uuidv4} = require('uuid');
+uuidv4();
+
+app.set('view engine', 'hbs');
+app.set('views', path.join(__dirname, 'views'));
+
+
+app.get('/', (req, res) => {
+    res.render('index', { name: 'index' });
+});
+app.listen(port, () => {
+    console.log(`TweetJS listening at http://localhost:${port}`)
+});
+/*
 const { MongoClient } = require('mongodb');
 
 const uri = "mongodb+srv://test:test@clusterleanbot.ts4u2.mongodb.net/OlympicGames?retryWrites=true&w=majority";
@@ -14,7 +32,11 @@ async function main() {
         console.log(sport.name);
     });
 
-    client.close();
+    try {
+        client.close();
+    }catch (e) {
+        console.log(e);
+    }
 }
 
-main();
+main();*/
