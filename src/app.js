@@ -13,7 +13,7 @@ app.get('/', (req, res) => {
     res.render('index', { name: 'index' });
 });
 app.listen(port, () => {
-    console.log(`TweetJS listening at http://localhost:${port}`)
+    console.log(`OlympicGames listening at http://localhost:${port}`)
 });
 /*
 const { MongoClient } = require('mongodb');
