@@ -6,8 +6,9 @@ const { v4: uuidv4} = require('uuid');
 uuidv4();
 
 app.set('view engine', 'hbs');
-app.set('views', path.join(__dirname, 'views'));
+app.set('views', path.join(__dirname+'/public/view/index.hbs', 'views'));
 
+app.use(express.static('public'));
 
 app.get('/', (req, res) => {
     res.render('index', { name: 'index' });
