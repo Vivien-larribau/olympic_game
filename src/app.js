@@ -12,7 +12,7 @@ app.use('/api', sportRouter);
 //const athleteRouter = require('./routers/athlete_router');
 //app.use('/api', athleteRouter);
 //connection to database//
-require('./database/mongodb');
+//require('./database/mongodb');
 
 
 app.use(express.static(path.join(__dirname, 'public')));
@@ -20,6 +20,10 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.get('/', (req, res) => {
     res.render('index', { name: 'index' });
 });
+app.get('/athletes', (req, res) => {
+    res.redirect('/views/athletes');
+});
+
 app.listen(port, () => {
     console.log(`OlympicGames listening at http://localhost:${port} 🚀`)
 });
