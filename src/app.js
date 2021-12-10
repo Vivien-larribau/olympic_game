@@ -29,3 +29,6 @@ app.listen(port, () => {
 app.get('/athletes', function (req, res) {
     res.render('athletes');
 });
+app.get('/sports', function (req, res) {
+    res.render('sports');
+});
