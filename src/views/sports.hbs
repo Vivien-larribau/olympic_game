@@ -23,14 +23,19 @@
                 <tr>
                     <th scope="col">Nom</th>
                     <th scope="col">Catégory</th>
+                    <th scope="col">Action</th>
                 </tr>
                 </thead>
-                <tbody>
                 {{#each sports}}
-                <tr>
-                    <td>{{name}}</td>
-                    <td>{{category}}</td>
-                </tr>
+                    <form class="form_style" method="DELETE" action="/api/sports/{{_id}}">
+                    <div>
+                        <tr>
+                            <td name="name">{{name}}</td>
+                            <td name="category">{{category}}</td>
+                            <td><input class="btn btn-danger form-control" type="submit" value="Supprimer"></td>
+                    </tr>
+                    </div>
+                </form>
                 {{/each}}
                 </tbody>
             </table>
