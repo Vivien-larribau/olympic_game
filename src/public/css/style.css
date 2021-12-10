@@ -1,8 +1,6 @@
 .background{
     background-image: url("../images/background.jpg");
     background-color: black;
-    /* Fixe l'image en haut à gauche de la page */
-    position: fixed;
     top: 0;
     left: 0;
     /* Préserve le ratio de l'image */
@@ -23,4 +21,28 @@
     position: absolute; /* postulat de départ */
     top: 50%; left: 50%; /* à 50%/50% du parent référent */
     transform: translate(-50%, -50%); /* décalage de 50% de sa propre taille */
+}
+.style_page_creation{
+    color: white;
+    text-align: center;
+    padding-top: 2rem;
+}
+.style_label{
+    color: white;
+}
+.style_tableau{
+    color:white;
+    text-align: center;
+    margin: auto;
+}
+th{
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+.style_h1{
+    text-align: center;
+    color: white;
+}
+.form_style{
+    padding-right: 3rem;
 }
