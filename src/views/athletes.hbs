@@ -41,13 +41,15 @@
                 </tr>
                 </thead>
                 <tbody>
+                {{#each athletes}}
                 <tr>
-                    <td>Mark</td>
-                    <td>Otto</td>
-                    <td>France</td>
-                    <td>Foot</td>
-                    <td>2</td>
+                    <td>{{firstname}}</td>
+                    <td>{{name}}</td>
+                    <td>{{region}}</td>
+                    <td>{{dicipline}}</td>
+                    <td>{{nb_medaille}}</td>
                 </tr>
+                {{/each}}
                 </tbody>
             </table>
         </div>

@@ -8,6 +8,6 @@ router.get('/sports/', async (req, res) => {
     sportController.list(req, res);
 });
 
-// ... A COMPLETER ...
+
 
 module.exports = router;

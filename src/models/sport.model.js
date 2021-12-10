@@ -5,11 +5,11 @@ const mongoose = require('mongoose');
 
 const sportSchema = new mongoose.Schema({
     name: String,
-    //category: String,
+    category: String,
 
     // ... A COMPLETER ...
     // Exemple :
-    // athletes : [{ type: Schema.Types.ObjectId, ref: 'Athlete' }]
+    //athletes : [{ type: Schema.Types.ObjectId, ref: 'Athlete' }]
 });
 
 const Sport = mongoose.model('Sport', sportSchema);

@@ -1,9 +1,6 @@
 const Sport = require('../models/sport.model');
 
 class SportController {
-    /**
-     * Lister tous les sports
-     */
     async list(req, res) {
         const sports = await Sport.find();
 

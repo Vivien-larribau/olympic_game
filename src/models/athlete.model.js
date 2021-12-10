@@ -7,7 +7,7 @@ const athleteSchema = new mongoose.Schema({
     name : String,
     region : String,
     dicipline : String,
-    nb_medaille : Integer
+    nb_medaille : String
 });
 
 const Athlete = mongoose.model('Athlete', athleteSchema);
