@@ -1,4 +1,4 @@
-const Sport = require('../models/sport.model');
+const Sport = require('../models/sport.model');;
 
 class SportController {
     async list(req, res) {
@@ -9,8 +9,10 @@ class SportController {
             sports: sports
         });
     }
-
-    // ... A COMPLETER ...
+    async listPage(req, res){
+        const sports = await Sport.find();
+        res.render('sports', {sports});
+    }
 }
 
 module.exports = SportController;
