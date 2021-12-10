@@ -3,26 +3,26 @@
     <div class="row">
         <div class="col-6">
             <h4 class="style_page_creation">Création</h4>
-            <form class="form_style" method="post" action="/api/athletes">
+            <form class="form_style" method="POST" action="/api/athletes/post">
                 <div class="form-group">
                     <label class="style_label" for="exampleFormControlInput1">Prénom</label>
-                    <input id="prenom" type="text" class="form-control">
+                    <input name="firstname" id="firstname" type="text" class="form-control">
                 </div>
                 <div class="form-group">
                     <label class="style_label" for="exampleFormControlTextarea1">Nom</label>
-                    <input id="nom" type="text" class="form-control">
+                    <input name="name" id="name" type="text" class="form-control">
                 </div>
                 <div class="form-group">
                     <label class="style_label" for="exampleFormControlTextarea1">Région</label>
-                    <input id="region" type="text" class="form-control">
+                    <input name="region" id="region" type="text" class="form-control">
                 </div>
                 <div class="form-group">
                     <label class="style_label" for="exampleFormControlTextarea1">Dicipline</label>
-                    <input id="dicipline" type="text" class="form-control">
+                    <input name="dicipline" id="dicipline" type="text" class="form-control">
                 </div>
                 <div class="form-group">
                     <label class="style_label" for="exampleFormControlTextarea1">Nombre de médaille</label>
-                    <input id="nb_medaille" type="number" class="form-control">
+                    <input name="nb_medaille" id="nb_medaille" type="number" class="form-control">
                 </div>
                 <button type="submit" class="btn btn-primary">Envoyer</button>
             </form>
