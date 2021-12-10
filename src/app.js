@@ -6,6 +6,7 @@ const path = require('path')
 
 app.set('view engine', 'hbs');
 app.set('views', path.join(__dirname, 'views'));
+app.set('athletes', path.join(__dirname, '/views/athletes'));
 // Déclaration des routeurs //
 const sportRouter = require('./routers/sport.router');
 app.use('/api', sportRouter);
@@ -20,10 +21,11 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.get('/', (req, res) => {
     res.render('index', { name: 'index' });
 });
-app.get('/athletes', (req, res) => {
-    res.redirect('/views/athletes');
-});
 
 app.listen(port, () => {
     console.log(`OlympicGames listening at http://localhost:${port} 🚀`)
+});
+
+app.get('/athletes', function (req, res) {
+    res.render('athletes');
 });

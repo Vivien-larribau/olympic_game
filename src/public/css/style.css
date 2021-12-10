@@ -9,9 +9,14 @@
     min-width: 100%;
     min-height: 100%;
 }
-.titre_home_page{
+.titre_home_page {
+    /*Text*/
     text-align: center;
     color: white;
+
+    /*Rectangle*/
+    padding: 3rem;
+    border: 0.1em solid white;
 }
 
 .welcome_section{
