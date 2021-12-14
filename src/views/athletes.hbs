@@ -38,17 +38,23 @@
                     <th scope="col">Région</th>
                     <th scope="col">Dicipline</th>
                     <th scope="col">Nombre de médaille</th>
+                    <th scope="col"> Action</th>
                 </tr>
                 </thead>
                 <tbody>
                 {{#each athletes}}
-                <tr>
-                    <td>{{firstname}}</td>
-                    <td>{{name}}</td>
-                    <td>{{region}}</td>
-                    <td>{{dicipline}}</td>
-                    <td>{{nb_medaille}}</td>
-                </tr>
+                <form class="form_style" method="DELETE" action="/api/athletes/{{_id}}">
+                    <div>
+                        <tr>
+                            <td name="firstname">{{firstname}}</td>
+                            <td name="name">{{name}}</td>
+                            <td name="region">{{region}}</td>
+                            <td name="dicipline">{{dicipline}}</td>
+                            <td name="nb_medaille">{{nb_medaille}}</td>
+                            <td><input class="btn btn-danger form-control" type="submit" value="Supprimer"></td>
+                        </tr>
+                    </div>
+                </form>
                 {{/each}}
                 </tbody>
             </table>

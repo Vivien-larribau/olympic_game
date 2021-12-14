@@ -21,4 +21,17 @@ router.post('/athletes/post',async (req, res) => {
     res.redirect('/api/athletes');
 });
 
+router.get('/athletes/:id', async (req, res) =>{
+    const paramAthlete = req.params;
+    console.log(paramAthlete.id);
+    Athlete.remove({_id: paramAthlete.id}, function (err) {
+        if (!err){
+            console.log("success");
+        }else {
+            console.log(err);
+        }
+    })
+    res.redirect('/api/athletes');
+})
+
 module.exports = router;
