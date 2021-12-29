@@ -1,4 +1,9 @@
-
+.background_home{
+    /*background-image: url("../images/fond.jpg");*/
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 .titre_home_page {
     /*Text*/
     text-align: center;
