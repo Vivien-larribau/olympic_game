@@ -1,4 +1,5 @@
 # olympic_game
+- Clone notre projet et enquite taper les commandes.
 - Les commandes npm à faire avant de lancer le app.js :
 - npm install **mongodb**
 - npm install **uuidv4**
@@ -62,7 +63,7 @@
 
 ## Rendu attendu
 
-- [ ] Code source sur un repo Git (sans le dossier node_modules 🙏)
+- [x] Code source sur un repo Git (sans le dossier node_modules 🙏)
 - [x] `README.md`
-  - [ ] Instructions pour installer le projet (`git clone`, `npm install`, `npm start`, éventuels exemples de commande `curl`, ...)
+  - [x] Instructions pour installer le projet (`git clone`, `npm install`, `npm start`, éventuels exemples de commande `curl`, ...)
   - [x] Checklist des API et des fonctionnalités Web avec un statut des tests (OK ✅ ou KO ❌)
