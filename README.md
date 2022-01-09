@@ -1,12 +1,12 @@
 # olympic_game
 - Les commandes npm à faire avant de lancer le app.js :
- npm install **mongodb**
- npm install **uuidv4**
- npm install **express**
- npm install **morgan**
- npm install **hbs**
- npm install **mongoose**
- Ensuite vous pouvez lancer le **app.js**
+- npm install **mongodb**
+- npm install **uuidv4**
+- npm install **express**
+- npm install **morgan**
+- npm install **hbs**
+- npm install **mongoose**
+-> Ensuite vous pouvez lancer le **app.js**
 
 ## API REST
 
