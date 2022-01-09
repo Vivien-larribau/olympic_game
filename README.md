@@ -5,15 +5,15 @@
 
 ### Points de terminaison Sports
 
-- [ ] Endpoint Créer un sport : `POST /api/sports`
+- [x] Endpoint Créer un sport : `POST /api/sports`
 - [x] Endpoint Lister les sports : `GET /api/sports` (déjà fourni dans le squelette du projet)
 - [ ] Endpoint Consulter les athlètes d'un sport : `GET /api/sports/{sportId}/athletes`
 - [ ] Endpoint Ajouter un athlète dans un sport : `POST /api/sports/{sportId}/athletes/{athleteId}`
 
 ### Points de terminaison Athlètes
 
-- [ ] Endpoint Créer un athlète : `POST /api/athletes`
-- [ ] Endpoint Lister les athlètes : `GET /api/athletes`
+- [x] Endpoint Créer un athlète : `POST /api/athletes`
+- [x] Endpoint Lister les athlètes : `GET /api/athletes`
 - [ ] Endpoint Consulter les sports d'un athlète : `GET /api/athletes/{athleteId}/sports`
 
 ### Points de terminaison Utilisateurs administrateurs (optionnel)
@@ -27,15 +27,15 @@
 
 ### Pages Web Sports/Athlètes
 
-- [ ] Page Web Lister les sports
-- [ ] Page Web Lister les athlètes
-- [ ] Page Web Créer un sport (formulaire)
-- [ ] Page Web Créer un athlète (formulaire)
+- [x] Page Web Lister les sports
+- [x] Page Web Lister les athlètes
+- [x] Page Web Créer un sport (formulaire)
+- [x] Page Web Créer un athlète (formulaire)
 
 ### Autres pages Web Sports/Athlètes (optionnel)
 
-- [ ] Page Web ou fonctionnalité Supprimer un sport
-- [ ] Page Web ou fonctionnalité Supprimer un athlète
+- [x] Page Web ou fonctionnalité Supprimer un sport
+- [x] Page Web ou fonctionnalité Supprimer un athlète
 - [ ] Page Web Modifier un sport (formulaire)
 - [ ] Page Web Modifier un athlète (formulaire)
 
@@ -54,6 +54,6 @@
 ## Rendu attendu
 
 - [ ] Code source sur un repo Git (sans le dossier node_modules 🙏)
-- [ ] `README.md`
+- [x] `README.md`
   - [ ] Instructions pour installer le projet (`git clone`, `npm install`, `npm start`, éventuels exemples de commande `curl`, ...)
-  - [ ] Checklist des API et des fonctionnalités Web avec un statut des tests (OK ✅ ou KO ❌)
+  - [x] Checklist des API et des fonctionnalités Web avec un statut des tests (OK ✅ ou KO ❌)
