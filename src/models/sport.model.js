@@ -7,8 +7,6 @@ const sportSchema = new mongoose.Schema({
     name: String,
     category: String,
 
-    // ... A COMPLETER ...
-    // Exemple :
     athletes : [{ type: Schema.Types.ObjectId, ref: 'Athlete' }]
 });
 

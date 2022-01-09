@@ -5,16 +5,18 @@
 
 ### Points de terminaison Sports
 
-- [x] Endpoint Créer un sport : `POST /api/sports`
-- [x] Endpoint Lister les sports : `GET /api/sports` (déjà fourni dans le squelette du projet)
-- [ ] Endpoint Consulter les athlètes d'un sport : `GET /api/sports/{sportId}/athletes`
-- [ ] Endpoint Ajouter un athlète dans un sport : `POST /api/sports/{sportId}/athletes/{athleteId}`
+- [x] Endpoint Créer un sport : `POST /api/sports` OK ✅
+- [x] Endpoint Lister les sports : `GET /api/sports` (déjà fourni dans le squelette du projet) OK ✅
+- [ ] Endpoint Consulter les athlètes d'un sport : `GET /api/sports/{sportId}/athletes` KO ❌
+- [ ] Endpoint Ajouter un athlète dans un sport : `POST /api/sports/{sportId}/athletes/{athleteId}` KO ❌
+- On a pas réussie à passer l'erreur "Cast to ObjectId failed for value "athletes" (type string) at path "_id" for model "Sport""
+- **Donc les get pour un athlète d'un sport et inversement ne sont pas fonctionnels**.
 
 ### Points de terminaison Athlètes
 
-- [x] Endpoint Créer un athlète : `POST /api/athletes`
-- [x] Endpoint Lister les athlètes : `GET /api/athletes`
-- [ ] Endpoint Consulter les sports d'un athlète : `GET /api/athletes/{athleteId}/sports`
+- [x] Endpoint Créer un athlète : `POST /api/athletes` OK ✅
+- [x] Endpoint Lister les athlètes : `GET /api/athletes` OK ✅
+- [ ] Endpoint Consulter les sports d'un athlète : `GET /api/athletes/{athleteId}/sports` KO ❌
 
 ### Points de terminaison Utilisateurs administrateurs (optionnel)
 
@@ -34,8 +36,8 @@
 
 ### Autres pages Web Sports/Athlètes (optionnel)
 
-- [x] Page Web ou fonctionnalité Supprimer un sport
-- [x] Page Web ou fonctionnalité Supprimer un athlète
+- [x] Page Web ou fonctionnalité Supprimer un sport OK ✅
+- [x] Page Web ou fonctionnalité Supprimer un athlète OK ✅
 - [ ] Page Web Modifier un sport (formulaire)
 - [ ] Page Web Modifier un athlète (formulaire)
 
